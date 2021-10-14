@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/jquery.formstyler.css" />
+		<link rel="stylesheet" href="css/jquery.formstyler.theme.css" />
+		<link rel="stylesheet" href="fonts/fonts.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<section class="car">
+			<div class="container">
+				<div class="wrapper">
+					<div class="filter">
+						<h1 class="filter__title">FTL: Прямая машина</h1>
+						<ul class="filter__info">
+							<li class="filter__list">
+								<h4 class="filter__list-title">Маршрут</h4>
+								<p class="parameter">Откуда</p>
+								<input class="parameter-input" type="text" placeholder="" />
+								<p class="parameter">Куда</p>
+								<input class="parameter-input" type="text" placeholder="" />
+							</li>
+							<li class="filter__list">
+								<h4 class="filter__list-title">Транспорт</h4>
+								<div class="filter__list-wrapper">
+									<div class="transport first">
+										<p class="parameter">Грузоподъемность</p>
+										<select class="parameter-input" type="text">
+											<option class="no-visability" value="" hidden selected>
+												Не выбрана
+											</option>
+											<option>Вариант 1</option>
+											<option>Вариант 2</option>
+											<option>Вариант 3</option>
+											<option>Вариант 4</option>
+											<option>Вариант 5</option>
+										</select>
+									</div>
+									<div class="transport">
+										<p class="parameter">Способ погрузки</p>
+										<select class="parameter-input" type="text">
+											<option selected>Задняя</option>
+											<option>Верхняя</option>
+											<option>Сбоку</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li class="filter__list">
+								<h4 class="filter__list-title">Груз</h4>
+								<div class="filter__list-wrapper">
+									<div class="cargo first">
+										<p class="parameter">Тип груза</p>
+										<select class="parameter-type" type="text">
+											<option class="no-visability" hidden selected>
+												Не выбран
+											</option>
+											<option>Вариант 1</option>
+											<option>Вариант 2</option>
+											<option>Вариант 3</option>
+											<option>Вариант 4</option>
+											<option>Вариант 5</option>
+										</select>
+									</div>
+
+									<div class="cargo cargo--class">
+										<p class="parameter">Класс опасности</p>
+										<select class="parameter-input" type="text">
+											<option class="no-visability" selected hidden>
+												Не выбран
+											</option>
+											<option>Класс 1</option>
+											<option>Класс 2</option>
+											<option>Класс 3</option>
+											<option>Класс 4</option>
+											<option>
+												Класс 5 — Окисляющие вещества и органические перекиси
+											</option>
+										</select>
+									</div>
+									<div class="cargo cargo--price first">
+										<p class="parameter">Объявленная ценность</p>
+										<input
+											class="parameter-price"
+											type="text"
+											placeholder="≥ 1"
+										/>
+									</div>
+								</div>
+								<label class="checkbox-label">
+									<input class="checkbox" type="checkbox" /><span
+										class="checkbox__name"
+										>Требуется температурный режим</span
+									>
+								</label>
+
+								<div class="filter__list-wrapper">
+									<div class="temperature first">
+										<p class="parameter parameter">От, °C</p>
+										<input
+											class="parameter-price"
+											type="text"
+											placeholder="-10"
+										/>
+									</div>
+									<div class="temperature">
+										<p class="parameter parameter">До, °C</p>
+										<input
+											class="parameter-price"
+											type="text"
+											placeholder="15"
+										/>
+									</div>
+								</div>
+							</li>
+							<li class="filter__list">
+								<h4 class="filter__list-title">Время</h4>
+								<div class="time">
+									<p class="time__info">Когда прибыть на точку</p>
+									<p class="time__info">700 км в день</p>
+								</div>
+								<ul class="radio-btn">
+									<label for="" class="radio-btn__label">
+										<li>
+											<input
+												class="radio-btn__input"
+												type="radio"
+												name="adress"
+											/><span class="adress-name">Адрес не указан</span
+											><button class="radio-btn__btn">Не выбрано</button>
+										</li>
+									</label>
+									<label for="" class="radio-btn__label">
+										<li>
+											<input
+												type="radio"
+												class="radio-btn__input"
+												name="adress"
+											/><span class="adress-name">Адрес не указан</span
+											><button disabled class="radio-btn__btn">
+												Не выбрано
+											</button>
+										</li>
+									</label>
+								</ul>
+								<p class="parameter text-comment">Когда прибыть на точку</p>
+								<textarea
+									placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"
+									class="comment"
+								></textarea>
+							</li>
+						</ul>
+					</div>
+					<p class="message">
+						Для расчета стоимости необходимо ввести параметры груза, пункты
+						отправки и прибытия.
+					</p>
+				</div>
+			</div>
+		</section>
+		<script src="js/main.min.js"></script>
+		<script src="js/jquery.formstyler.min.js"></script>
+	</body>
+</html>
